@@ -13,8 +13,8 @@
 
 ## Links
 
-[Project Github Repo] [https://github.com/BetsyPetering/ProjectTwo](#link-to-repo)
+[Project Github Repo] https://github.com/BetsyPetering/ProjectTwo
 
-[Project Task board on github or trello] [https://github.com/BetsyPetering/ProjectTwo/projects/1](#link-to-taskBoard)
+[Project Task board on github or trello] https://github.com/BetsyPetering/ProjectTwo/projects/1
 
 _we are expecting you guys to have a plan for this project, that you will be updating at least each class._

@@ -28,3 +28,13 @@ db.sequelize.sync().then(function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
   });
 });
+
+// Set up promises with mongoose
+mongoose.Promise = global.Promise;
+//Connect to the Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://<Betsy>:**Get1+A**@ds031117.mlab.com:31117/heroku_09p1z93p",
+  {
+    useMongoClient: true
+  }
+);
