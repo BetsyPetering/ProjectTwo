@@ -50,4 +50,31 @@ module.exports = function(app) {
       });
     }
   });
+  app.get("/api/driver/packages", (req, res) => {
+    if (req.user.driver) {
+      db.Packages.findAll({
+        where: {
+          driverId: req.user.id
+        }
+      }).then(packages => {
+        res.send(packages);
+      });
+    } else {
+      res.json({});
+    }
+  });
+  app.get("/api/packages", (req, res) => {
+    db.Packages.findAll({}).then(packages => {
+      res.json(packages);
+    });
+  });
+  app.post("/api/packages", (req, res) => {
+    db.Packages.create(req.body).then(package => {
+      res.json(package);
+    });
+  });
+  //get route for all users
+  //get route for all drivers
+  //get route for all packages
+  // Express get=read, post=create, put=update, delete=delete
 };

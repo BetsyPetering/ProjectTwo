@@ -2,7 +2,12 @@
 var bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-  var Driver = sequelize.define("Driver", {
+  var Driver = sequelize.define("Drivers", {
+    driverId: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     // The email cannot be null, and must be a proper email before creation
     email: {
       type: DataTypes.STRING,
@@ -31,5 +36,13 @@ module.exports = function(sequelize, DataTypes) {
       null
     );
   });
+  Driver.associate = models => {
+    Driver.hasMany(models.Packages, {
+      foreignKey: "driverId",
+      sourceKey: "driverId",
+      onDelete: "no action",
+      onUpdate: "cascade"
+    });
+  };
   return Driver;
 };
