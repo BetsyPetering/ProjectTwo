@@ -2,7 +2,7 @@
 var bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-  var User = sequelize.define("Users", {
+  var User = sequelize.define("User", {
     userId: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -37,7 +37,7 @@ module.exports = function(sequelize, DataTypes) {
     );
   });
   User.associate = models => {
-    User.hasMany(models.Packages, {
+    User.hasMany(models.Package, {
       foreignKey: "userId",
       sourceKey: "userId",
       onDelete: "no action",
