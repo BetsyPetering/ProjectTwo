@@ -69,12 +69,14 @@ module.exports = function(app) {
     });
   });
   app.post("/api/packages", (req, res) => {
+    console.log(req.body);
     db.Packages.create(req.body).then(package => {
       res.json(package);
     });
   });
+
   //get route for all users
   //get route for all drivers
   //get route for all packages
-  // Express get=read, post=create, put=update, delete=delete
+  // Express post=create, get=read,  put=update, delete=delete
 };
