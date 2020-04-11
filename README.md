@@ -1,15 +1,25 @@
 # Project Name
-    Special Delivery!
+    Taken Right to U Xpress 
 
 ## Project Description
-  There has never been a time when delivery can help more than during a time of crisis with homestay. This app will solve the question:  Is the store I need open? Are they doing curbside delivery? Then, after they have placed their order, they will put in a request for pickup and delivery. They get what they want delivered to their home. This can be groceries, Starbucks, DutchBros, or the local business up the street. We deliver.
+  There has never been a time when delivery can help more than during a time of crisis with homestay. This app will solve the question:  How am I going to get this item I just purchased to my home? Log-in to our new app, tell us what you purhcased, from what store and their location, then what your location is, and we will deliver to you - for a fee, of course. We specialize in deliveries that need a pickup truck. We deliver.
+
+  What deliver? App will ask customer what they need delivered, how may, the size and weight of items
+
+  Choose type of vehicle delivery will need: bicycle, small vehicle, car, truck
+
+  Time for delivery?
+
+  Where from?
+
+  Where are you?
   
 ## Team
     David Pendley
     Justin Skiba
     Betsy Petering
     cynmojica
-    Geno1131993
+    Danielle Smith
 
 ## Links
 
