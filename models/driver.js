@@ -2,7 +2,7 @@
 var bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-  var Driver = sequelize.define("Drivers", {
+  var Driver = sequelize.define("Driver", {
     driverId: {
       type: DataTypes.INTEGER,
       primaryKey: true,
@@ -37,7 +37,7 @@ module.exports = function(sequelize, DataTypes) {
     );
   });
   Driver.associate = models => {
-    Driver.hasMany(models.Packages, {
+    Driver.hasMany(models.Package, {
       foreignKey: "driverId",
       sourceKey: "driverId",
       onDelete: "no action",

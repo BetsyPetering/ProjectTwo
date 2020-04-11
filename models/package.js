@@ -1,6 +1,6 @@
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
-  var Package = sequelize.define("Packages", {
+  var Package = sequelize.define("Package", {
     // The email cannot be null, and must be a proper email before creation
     package_id: {
       type: DataTypes.STRING,
@@ -33,13 +33,13 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
   Package.associate = models => {
-    Package.belongsTo(models.Users, {
+    Package.belongsTo(models.User, {
       foreignKey: "userId",
       sourceKey: "userId",
       onDelete: "no action",
       onUpdate: "cascade"
     });
-    Package.belongsTo(models.Drivers, {
+    Package.belongsTo(models.Driver, {
       foreignKey: "driverId",
       sourceKey: "driverId",
       onDelete: "no action",
