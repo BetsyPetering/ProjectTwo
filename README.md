@@ -2,24 +2,19 @@
     Taken Right to U Xpress 
 
 ## Project Description
-  There has never been a time when delivery can help more than during a time of crisis with homestay. This app will solve the question:  How am I going to get this item I just purchased to my home? Log-in to our new app, tell us what you purhcased, from what store and their location, then what your location is, and we will deliver to you - for a fee, of course. We specialize in deliveries that need a pickup truck. We deliver.
+  This is an app for people to use when they need a delivery of something they have purchased. The item(s) need to 1)Fit in a car, 2)Be able to be loaded into a car by one person, so approximately 50 pounds or less, 3)Have been purchased(paid for) by the customer before ordering delivery.
 
-  What deliver? App will ask customer what they need delivered, how may, the size and weight of items
-
-  Choose type of vehicle delivery will need: bicycle, small vehicle, car, truck
-
-  Time for delivery?
-
-  Where from?
-
-  Where are you?
+  For this we will ask:
+    - What is(are) the items to be picked up?
+    - Where will we pick up from?
+    - To where will we deliver?
   
 ## Team
     David Pendley
     Justin Skiba
     Betsy Petering
-    cynmojica
-    Danielle Smith
+    cynmojica (4/10/2020 have not heard from, not connected to repository)
+    Danielle Smith (4/10/2020 only communication is "text me if you need me to do something", not connected to repository)
 
 ## Links
 
