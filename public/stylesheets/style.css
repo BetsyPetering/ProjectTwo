@@ -12,6 +12,11 @@ form {
   border-radius: 1em;
 }
 
+.jumbotron {
+  align-content: center !important;
+  text-align: center !important;
+}
+
 ul {
   list-style: none;
   padding: 0;

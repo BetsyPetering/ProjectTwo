@@ -1,3 +1,4 @@
+//given to us
 // Requiring path to so we can use relative routes to our HTML files
 var path = require("path");
 
@@ -19,7 +20,7 @@ module.exports = function(app) {
     if (req.user) {
       res.redirect("/members");
     }
-    res.sendFile(path.join(__dirname, "../public/login.html"));
+    res.render("login");
   });
 
   // Here we've add our isAuthenticated middleware to this route.
