@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Submission Form</title>
+    <link href="stylesheets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+          <label for="package"
+            >Please Provide a Description of the Item that you would like
+            delivered:
+          </label>
+          <textarea id="description" name="user_description"></textarea>
+        </li>
+        <li>
+          <label for="dimensions"
+            >What are the approximate dimensions? (LxWxH)</label
+          >
+          <input type="text" id="dimensions" name="user_dimensions" />
+        </li>
+        <li>
+          <label for="weight">What is the approximate weight?</label>
+          <input type="text" id="weight" name="user_weight" />
+        </li>
+        <li>
+          <label for="plocation"
+            >What is the name and address of the pickup location?</label
+          >
+          <textarea id="" name="user_message"></textarea>
+        </li>
+        <li>
+          <label for="dlocation"
+            >What is the name and address of delivery?</label
+          >
+          <textarea id="dlocation" name="delivery_location"></textarea>
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="plocation" name="pickup_location"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Submit your request</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
