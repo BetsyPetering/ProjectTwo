@@ -77,9 +77,20 @@ module.exports = function(app) {
   });
   app.post("/my-handling-form-page", (req, res) => {
     console.log(req.body);
-    res.send("ok");
-    db.Driver.create(req.body).then(function(dbDriver) {
-      res.json(dbDriver);
+    db.Package.create(
+      {
+      user_name: req.body.user_name,
+      user_email: req.body.user_email,
+      user_phone: req.body.user_phone,
+      package_description: req.body.user_description,
+      package_dimensions: req.body.user_dimensions,
+      package_weight: req.body.user_weight,
+      pickup_location: req.body.pickup_location,
+      delivery_location: req.body.delivery_location,
+      }
+    ).then(function(dbDriver) {
+      // res.json(dbDriver);
+      res.send("/");
     });
   });
 
