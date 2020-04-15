@@ -2,30 +2,46 @@
 module.exports = function(sequelize, DataTypes) {
   var Package = sequelize.define("Package", {
     // The email cannot be null, and must be a proper email before creation
-    package_id: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true
-    },
-    name: {
+
+    user_name: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    weight: {
+    user_email: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    dimensions: {
+    user_phone: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    destination: {
+    package_description: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    package_weight: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    package_dimensions: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    pickup_location: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    delivery_location: {
       type: DataTypes.STRING,
       allowNull: false
     },
     userId: {
       type: DataTypes.INTEGER,
       allowNull: false
+    },
+    usermessage: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
     driverId: {
       type: DataTypes.INTEGER,
