@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/logout">
+                Logout
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Description</th>
+                <th scope="col">Dimensions</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Pickup Location</th>
+                <th scope="col">Delivery Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each packages}}
+                <tr>
+                    <td>{{this.dataValues.user_name}}</td>
+                    <td>{{this.dataValues.user_email}}</td>
+                    <td>{{this.dataValues.user_phone}}</td>
+                    <td>{{this.dataValues.package_description}}</td>
+                    <td>{{this.dataValues.package_dimensions}}</td>
+                    <td>{{this.dataValues.package_weight}}</td>
+                    <td>{{this.dataValues.pickup_location}}</td>
+                    <td>{{this.dataValues.delivery_location}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
