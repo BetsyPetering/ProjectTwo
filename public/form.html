@@ -19,27 +19,31 @@
           <input type="email" id="mail" name="user_email" />
         </li>
         <li>
+          <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="user_phone" />
+        </li>
+        <li>
           <label for="package"
             >Please Provide a Description of the Item that you would like
             delivered:
           </label>
-          <textarea id="description" name="user_description"></textarea>
+          <textarea id="description" name="package_description"></textarea>
         </li>
         <li>
           <label for="dimensions"
             >What are the approximate dimensions? (LxWxH)</label
           >
-          <input type="text" id="dimensions" name="user_dimensions" />
+          <input type="text" id="dimensions" name="package_dimensions" />
         </li>
         <li>
           <label for="weight">What is the approximate weight?</label>
-          <input type="text" id="weight" name="user_weight" />
+          <input type="text" id="weight" name="package_weight" />
         </li>
         <li>
           <label for="plocation"
             >What is the name and address of the pickup location?</label
           >
-          <textarea id="" name="user_message"></textarea>
+          <textarea id="" name="pickup_location"></textarea>
         </li>
         <li>
           <label for="dlocation"
@@ -49,7 +53,7 @@
         </li>
         <li>
           <label for="msg">Message:</label>
-          <textarea id="plocation" name="pickup_location"></textarea>
+          <textarea id="plocation" name="user_message"></textarea>
         </li>
         <li class="button">
           <button type="submit">Submit your request</button>

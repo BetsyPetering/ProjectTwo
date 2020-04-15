@@ -78,6 +78,9 @@ module.exports = function(app) {
   app.post("/my-handling-form-page", (req, res) => {
     console.log(req.body);
     res.send("ok");
+    db.Driver.create(req.body).then(function(dbDriver) {
+      res.json(dbDriver);
+    });
   });
 
   //get route for all users
