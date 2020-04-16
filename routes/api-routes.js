@@ -90,7 +90,7 @@ module.exports = function(app) {
       }
     ).then(function(dbDriver) {
       // res.json(dbDriver);
-      res.send("/");
+      res.setHeader("Location", "/packages");
     });
   });
 
