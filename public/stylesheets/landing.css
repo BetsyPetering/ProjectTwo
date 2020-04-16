@@ -5,3 +5,11 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
+.nav-wrapper {
+  background-color: brown;
+}
+
+#btn {
+  color: green;
+}
