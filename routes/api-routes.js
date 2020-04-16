@@ -76,9 +76,8 @@ module.exports = function(app) {
     });
   });
   app.post("/my-handling-form-page", (req, res) => {
-    console.log(req.body);
-    db.Package.create(
-      {
+    console.log(req.body.pickup_location);
+    db.Package.create({
       user_name: req.body.user_name,
       user_email: req.body.user_email,
       user_phone: req.body.user_phone,
@@ -86,11 +85,13 @@ module.exports = function(app) {
       package_dimensions: req.body.user_dimensions,
       package_weight: req.body.user_weight,
       pickup_location: req.body.pickup_location,
-      delivery_location: req.body.delivery_location,
-      }
-    ).then(function(dbDriver) {
+      delivery_location: req.body.delivery_location
+    }).then(function(dbDriver) {
       // res.json(dbDriver);
-      res.setHeader("Location", "/packages");
+      db.Package.findAll().then(packages => {
+        console.log(packages);
+        res.render("packages", { packages });
+      });
     });
   });
 
